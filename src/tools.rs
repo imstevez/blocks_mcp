@@ -25,7 +25,7 @@ pub struct EmptyRequest {}
 pub struct SearchRequest {
     #[schemars(description = "the chain id to query")]
     pub chain_id: i32,
-    #[schemars(description = "the query to search")]
+    #[schemars(description = "the query to search, it can be token name, token symbol, address, transaction hash, block number, block hash")]
     pub q: String,
 }
 
